@@ -1,0 +1,21 @@
+#nested list problem hackerrank
+# this type of writing a code is the basic writing! without any functions and using available builtin methods
+if __name__ == '__main__':
+    a=[]
+    l=[]
+    b=[]
+    for i in range(int(input())):
+        name = input()
+        score = float(input())
+        a.append([name,score])
+        l.append(score)
+    l1=set(l)
+    l=list(l1)
+    l.sort()
+    x=l[1]
+    for i in range(len(a)):
+        if (a[i][1] == x):
+            b.append(a[i][0])
+    b.sort()
+    for i in range(len(b)):
+        print(b[i])
