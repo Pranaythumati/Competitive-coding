@@ -1,0 +1,19 @@
+num=int(input("enter number"))
+if num%2 != 0 and num%3 !=0:
+    print("prime number")
+elif num<=3:
+    print("Prime number")
+else:
+    print("not a prime number")
+
+# second method
+num=int(input("enter number"))
+if num<=3:
+    print("prime number")
+elif num>3:
+    for i in range(4,num):
+        if num%i == 0:
+            print("not a prime number")
+        else:
+            print('prime number')
+            break
