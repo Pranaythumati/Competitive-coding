@@ -1,0 +1,11 @@
+num=list(map(int,input("enter 3 numbers").split(' ')))
+print(max(num))
+
+#second method
+num=list(map(int,input("enter 3 numbers").split(' ')))
+H=0
+for i in range(0,len(num)):
+    if num[i] > H:
+        H=num[i]
+print(H)
+        
