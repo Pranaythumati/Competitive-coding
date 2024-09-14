@@ -8,7 +8,7 @@ if 'C' in temp:
         if i.isnumeric():
             d += i
     d = int(d)
-    f=d+(9/5)+32
+    f=d*(9/5)+32
     print("%dF" %f)
 elif 'F' in temp:
     for i in temp:
