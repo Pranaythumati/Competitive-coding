@@ -1,0 +1,21 @@
+temp=input("enter temperature")
+#conversion=int(input("1 for c to f "))
+temp=temp.upper()
+d=''
+
+if 'C' in temp:
+    for i in temp:
+        if i.isnumeric():
+            d += i
+    d = int(d)
+    f=d+(9/5)+32
+    print("%dF" %f)
+elif 'F' in temp:
+    for i in temp:
+        if i.isnumeric():
+            d += i
+    d = int(d)
+    c=d-32*(5/2)
+    print("%dF" %c)
+else:
+  print("check the input")
