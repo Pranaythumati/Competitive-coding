@@ -1,0 +1,13 @@
+n=input("enter the char")
+print("the ascii value of the given character is:", ord(n))
+
+#Method 2
+while True:
+    n=input("enter the char")
+    if len(n) < 2 and len(n) > 0:
+        print("the ascii value of the given character is:", ord(n))
+        break
+    else:
+        print("you have entered multiple characters")
+        
+        
