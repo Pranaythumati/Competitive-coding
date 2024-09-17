@@ -1,0 +1,46 @@
+#To print Fibonacci series
+
+n=int(input("enter the number"))
+sum1=0
+sum2=1
+s=0
+print(sum2)
+for i in range(0,n-1):
+    s=sum2
+    sum2=sum1+sum2
+    sum1=s
+    print(sum2)
+
+# to print nth fibonacci number
+n=int(input("enter the number"))
+sum1=0
+sum2=1
+s=0
+for i in range(0,n-1):
+    s=sum2
+    sum2=sum1+sum2
+    sum1=s
+print(sum2)
+
+# to check if the given number is fibonacci number or not
+n=int(input("enter"))
+sum1=0
+sum2=1
+s=0
+for i in range(0,n-1):
+    s=sum2
+    sum2=sum1+sum2
+    sum1=s
+    if sum2 == n:
+        print("given number is fibonacci")
+    else:
+        print("not a fibonacci number")
+        break
+
+# with out using erd temporary variable
+n=int(input("enter the number"))
+sum1=0
+sum2=1
+for i in range(0,n-1):
+    sum1, sum2=sum2, sum1+sum2
+print(sum2)
