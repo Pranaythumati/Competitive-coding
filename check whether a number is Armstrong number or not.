@@ -1,0 +1,9 @@
+n=int(input("enter"))
+s=str(n)
+l=len(s)
+sum1=0
+for i in range(0,l):
+    sum1+=int(s[i])**l
+if sum1=n :
+    print("its an amstrong number")
+    
