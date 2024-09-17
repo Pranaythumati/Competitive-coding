@@ -4,3 +4,4 @@ for i in range(0,n):
     sum1*=n
     n=n-1
 print(sum1)
+
